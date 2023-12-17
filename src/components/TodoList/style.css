@@ -1,0 +1,16 @@
+.todo__container {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 1rem;
+}
+
+.todo__container h1 {
+    color: blue;
+}
+

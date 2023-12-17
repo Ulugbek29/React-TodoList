@@ -1,0 +1,176 @@
+.todoForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.todoForm form {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+.input__box {
+    position: relative;
+    flex: 2;
+    width: 100%;
+}
+.input__box::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background: red;
+    transition: all 0.5s;
+}
+
+/* ????? */
+ .todo__input:focus + .input__box::after {
+    width: 100%;
+}
+
+
+
+.todo__input {
+    flex: 2;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+
+.add__btn {
+    flex: 0.5;
+    border: 0;
+    background: blue;
+    color: #fff;
+    font-size: 600;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.disabled__add__btn {
+    flex: 0.5;
+    border: 0;
+    font-size: 600;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    background: #d3d3d3;
+    color: #fff;
+    pointer-events: none;
+}
+
+/* Todo  */
+
+.todo__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.todo__actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo__actions h2 {
+    width: 50%;
+}
+
+.todo__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.todo__box div {
+    width: 50%;
+}
+
+.text p {
+    word-break: break-all;
+    flex: 2;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+    pointer-events: none;
+}
+
+.edit__input input {
+    flex: 2;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.line__through {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.open{
+    pointer-events: visible;
+}
+
+.action__btns {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.action__btns button{
+    padding: 0.8rem 1rem;
+    background: transparent;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.edit {
+    border: 1px solid orange;
+    color: orange;
+}
+
+.edit:hover {
+    background: orange;
+    color: #fff;
+}
+
+.done {
+    border: 1px solid green;
+    color: green;
+}
+
+.done:hover {
+    background: green;
+    color: #fff;
+}
+
+.delete {
+    border: 1px solid red;
+    color: red;
+}
+
+.delete:hover {
+    background: red;
+    color: #fff;
+}
