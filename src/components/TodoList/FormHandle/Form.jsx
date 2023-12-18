@@ -33,6 +33,7 @@ export default function Form() {
           
             <button onClick={handleSubmit} className={`add__btn ${input.length > 0 ? "add__btn": "disabled__add__btn"}`}>ADD</button>
         </form>
+        
         <div className='todo__list'> 
         {todo.length > 0 ? (
         <Todo todos={todo} setTodo={setTodo} handleEditTodo={handleEditTodo}/>

@@ -17,8 +17,8 @@ const editTask = (task, id) => {
   setTodo(todos.map((t)=> t.id ===id ? {...t, task, isEdited: !t.isEdited} : t))
 }
 
-const cancelEdit = ()=> {
-  setTodo(todos.map((todo)=>({...todo, isEdited: false})))
+const cancelEdit = (id)=> {
+  setTodo(todos.map((todo)=>(todo.id === id ? {...todo, isEdited: false}: todo)))
 }
 
   return (
